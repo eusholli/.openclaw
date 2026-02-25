@@ -4,7 +4,7 @@
 
 ## Profile
 - **Company:** Rakuten Symphony (Rakuten Group subsidiary)
-- **Focus:** Cloud-native Open RAN telecom platforms, Symworld™, OSS, AI location intelligence.
+- **Focus:** Cloud-native Open RAN telecom platforms, industrial marketplace, OSS, AI location intelligence.
 - **Mission:** "Intelligent Growth" – AI-first operations, energy efficiency, multi-vendor interoperability.
 - **Operations:** Japan, US, Singapore, India, Korea, Europe, MEA.
 - **FY2025:** Profitable.

@@ -13,7 +13,7 @@
 Leads global initiatives in automation, OSS (Operations Support Systems) innovation, AI-driven operations, and intelligent networks at Rakuten Symphony.
 
 ## Key Professional Highlights
-- **Rakuten Symphony Role**: Leads global initiatives in automation, OSS (Operations Support Systems) innovation, AI-driven operations, and intelligent networks. Authored a 2022 company blog post on Rakuten Symphony's "Knowledge Hub," a Symworld platform tool using a virtual assistant (Lina) for incident resolution, knowledge sharing, and process efficiency.
+- **Rakuten Symphony Role**: Leads global initiatives in automation, OSS (Operations Support Systems) innovation, AI-driven operations, and intelligent networks. Authored a 2022 company blog post on Rakuten Symphony's "Knowledge Hub," a network management platform tool using a virtual assistant (Lina) for incident resolution, knowledge sharing, and process efficiency.
 - **Previous Experience**: Vice President of Network Operations at Rakuten Mobile since its 2020 launch (amid the pandemic), where he drove operational transformation, service assurance, and early automation efforts using scripts and machine learning—leading to Rakuten Symphony's creation after three years.
 - **Expertise & Recent Work**: Advocates for "agentic AI" in telcos for decision-making in network incidents (e.g., anomaly detection, root cause analysis, remediation with confidence scoring >90%). Rakuten's system handled ~6,000 incidents last year, boosting success from 88% to 95%+. Emphasizes gradual rollout, human oversight, and future uses like energy optimization.
 - **Speaking**: Spoke at MWC Las Vegas 2025 on "Smart Networks, Smart Services: Agentic AI for Telcos."

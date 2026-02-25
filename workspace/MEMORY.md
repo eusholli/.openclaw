@@ -27,3 +27,9 @@ When you discover a new person at a company (exec, key player, event speaker), y
 3.  **Cross-link events:** When that person speaks at or hosts an event (MWC, webinars, etc.), add the event to both their file AND the company's file.
 
 This ensures relationships between **companies ↔ people ↔ events** are always interconnected in your memory.
+
+## Rakuten Symphony Naming Standards (Updated Feb 25, 2026)
+When reporting on Rakuten Symphony, **DO NOT** use old "SymXXX" product naming (e.g., Symworld, Symview, Symplan). This naming has been replaced with descriptive names.
+- Replace **Symworld** with **Rakuten Symphony industrial marketplace** or **network orchestration platform**.
+- Use descriptive terms for all other former "Sym" products (e.g., "network observability" instead of Symview).
+- Always check generated responses to ensure no "Sym" branded product names remain.
