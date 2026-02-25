@@ -1,6 +1,6 @@
 # Ericsson Intelligence Report
 
-**Last Updated:** February 23, 2026
+**Last Updated:** February 24, 2026
 
 ## Company Focus (Current Intelligence)
 
@@ -16,6 +16,12 @@ Ericsson is a Swedish multinational telecom equipment and services company headq
 
 ### Latest Updates (Feb 2026)
 
+- **Agentic rApp on AWS (Feb 24):** Launched Agentic rApp as a service on AWS to accelerate autonomous network transformations with AI-driven RAN intelligence.
+- **Telstra/Qualcomm 5G Uplink Breakthrough (Feb 24):** World-first 5G uplink speed achievement with Telstra and Qualcomm using advanced carrier aggregation.
+- **Ericsson Federal Defense Contract (Feb 24):** Awarded seat on U.S. Missile Defense Agency's SHIELD IDIQ contract for secure 5G/6G defense applications.
+- **Oman Enterprise Summit (Feb 24):** Partnered with Oman's TRA to host Enterprise Summit advancing Vision 2040 through 5G scaling.
+- **Saudi 5G Consumer Study (Feb 24):** ConsumerLab found half of Saudi consumers willing to pay extra for guaranteed 5G network performance.
+- **MWC Attendance Cuts (Feb 24):** Reducing MWC Barcelona presence, signaling potential challenges for the event.
 - **Mistral AI Partnership (Feb 23):** Partnered with Mistral AI to develop advanced AI agents for next-gen telecom networks, focusing on automation for 6G and legacy systems.
 - **Swisscom Autonomous Networks (Feb 23):** Advancing autonomous network transformation using Ericsson's Intelligent Automation Platform (EIAP) and RAPPs, to be showcased at MWC 2026.
 - **Ookla 5G Slice Testing (Feb 23):** Announced industry-first methodology for testing 5G network slices with Ookla.

@@ -40,6 +40,7 @@ Rakuten Symphony is a telecom technology company and division of Rakuten Group, 
 | **Sharad Sriwastawa** | Representative Director & President | Operational leadership, 1&1 Germany deployment |
 | **Geoff Hollingworth** | CMO (30+ years telecom, ex-Ericsson) | "Intelligent Growth: Scaling Networks as Software, Not Infrastructure" (Feb 6, 2026); "The control illusion" (Jan 2026); "2026 brings risk of operator irrelevance" (Jan 2026) |
 | **Partha Seetala** | President of Rakuten Cloud & Chief AI Officer (Nov 2025) | AI adoption across organization; "Combine AI knowledge with domain expertise" (blog); ex-CEO Robin.io (acquired 2022) |
+| **Udai Kanukolanu** | Global Head of Sales & CRO | Sales leadership, "Telco to Techco" (2025), partnerships with Odine, MWC 2025 |
 
 ---
 
