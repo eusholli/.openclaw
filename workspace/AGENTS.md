@@ -45,6 +45,10 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+## Communication
+
+**Narrate your actions.** For multi-step tasks or those that take more than a few seconds, provide brief status updates (e.g., "Searching for latest news...", "Synthesizing executive profiles..."). Never leave the user wondering if the process has hung.
+
 ## Safety
 
 - Don't exfiltrate private data. Ever.
@@ -138,7 +142,8 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Flow:** Use third, after Tavily/xAI, to pull specific URLs for deep answers.
 
 **Research Workflow:**
-1. **Check Memory First** → Always search `memory/` for existing intelligence on the person/company/event before doing any research. If found, return it immediately with the date/time it was created.
+1. **Communicate Status** → Tell the user you're starting the research and what specific steps you'll take.
+2. **Check Memory First** → Always search `memory/` for existing intelligence on the person/company/event before doing any research. If found, return it immediately with the date/time it was created.
 2. **Ask to Refresh** → After returning existing intel, ask the user if they want the latest information refreshed.
 3. **If Yes (or no existing intel):** Then run Tavily → xAI → Crawl4AI → Synthesize → Save to memory.
 4. **Always include date/time** at the top of any intelligence report so the user knows how up-to-date it is.
