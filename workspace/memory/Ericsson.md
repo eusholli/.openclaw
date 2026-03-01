@@ -1,50 +1,42 @@
 # Ericsson Intelligence Report
 
-**Last Updated:** February 24, 2026
+**Last Updated:** March 1, 2026
 
 ## Company Focus (Current Intelligence)
 
-Ericsson is a Swedish multinational telecom equipment and services company headquartered in Stockholm. As a leader in 5G infrastructure, they compete directly with Nokia, Huawei, and newer Open RAN players like Rakuten Symphony.
+Ericsson is a Swedish multinational telecom equipment and services company headquartered in Stockholm. As a leader in 5G infrastructure, they are currently pivoting to an **"AI-Native"** strategy, prioritizing internal silicon over GPU-based AI for network operations.
 
 ### Strategic Focus (2025-2026)
 
-- **AI-Native RAN:** Launched 10 AI-ready Massive MIMO radios (Feb 2026) with on-device inference via proprietary Silicon—avoiding Nvidia dependency. Focus on real-time AI for beamforming, positioning, and coverage prediction.
-- **5G Advanced & Performance:** Emphasis on uplink capacity (targeting 12x growth by 2030), Massive MIMO (TDD/FDD), and multi-band support.
-- **Open RAN:** Positioned as "Open RAN-ready" with O-RAN Alliance interfaces (O1, O2). First Open RAN call with AT&T/1Finity using third-party radios (2025). Declares Open RAN "secure and deployment-ready."
-- **Cloud RAN:** Hybrid deployments combining purpose-built RAN with Cloud RAN on COTS hardware.
-- **Automation:** Ericsson Intelligent Automation Platform (EIAP) and RAN Intelligent Controller (RIC) with rApps for self-optimizing networks.
+- **AI-Native RAN:** Launched a suite of **AI-ready radios, antennas, and AI RAN software** (Feb 2026) ahead of MWC Barcelona. Features **Ericsson Silicon** with neural network accelerators for real-time AI inference at the site level, enabling AI-managed beamforming, outdoor positioning, and instant coverage prediction.
+- **5G Advanced & Performance:** Focus on AI-led transformation for 5G-Advanced, targeting 5G monetization via Standalone (SA) and uplink boosts for AR/VR/AI apps.
+- **Open RAN & AI-RAN:** Demonstration of interworking between **SoftBank's AITRAS Orchestrator** and **Ericsson's Intelligent Automation Platform (IAP/SMO)** at MWC 2026. This uses O-RAN-compliant interfaces and rApps for dynamic resource allocation between AI and RAN workloads.
+- **6G Development:** Aggressive prototyping for 6G, with MWC 2026 demos including:
+    - **Apple:** Multi-RAT spectrum sharing (5G/6G) for TDD mid-band.
+    - **MediaTek:** 6G cm-wave data calls for low-latency AI-XR.
+    - **Qualcomm:** 6G radio prototypes (6-8 GHz cmWave) for device-network compute.
 
-### Latest Updates (Feb 2026)
+### Latest Updates (March 1, 2026 - MWC Barcelona Eve)
 
-- **Agentic rApp on AWS (Feb 24):** Launched Agentic rApp as a service on AWS to accelerate autonomous network transformations with AI-driven RAN intelligence.
+- **MWC Barcelona 2026 (March 2-5):** Ericsson is hosting a massive pavilion in Hall 2 focused on "simulated city" demos of autonomous operations and 6G innovations.
+- **SoftBank Interworking (Feb 27, 2026):** Achieved interoperability between SoftBank's AI-RAN orchestrator and Ericsson's SMO platform, a key step in multi-vendor AI-integrated networks.
+- **Agentic rApp on AWS (Feb 24, 2026):** Launched Agentic rApp as a service on AWS to accelerate autonomous network transformations.
 - **Telstra/Qualcomm 5G Uplink Breakthrough (Feb 24):** World-first 5G uplink speed achievement with Telstra and Qualcomm using advanced carrier aggregation.
-- **Ericsson Federal Defense Contract (Feb 24):** Awarded seat on U.S. Missile Defense Agency's SHIELD IDIQ contract for secure 5G/6G defense applications.
-- **Oman Enterprise Summit (Feb 24):** Partnered with Oman's TRA to host Enterprise Summit advancing Vision 2040 through 5G scaling.
-- **Saudi 5G Consumer Study (Feb 24):** ConsumerLab found half of Saudi consumers willing to pay extra for guaranteed 5G network performance.
-- **MWC Attendance Cuts (Feb 24):** Reducing MWC Barcelona presence, signaling potential challenges for the event.
-- **Mistral AI Partnership (Feb 23):** Partnered with Mistral AI to develop advanced AI agents for next-gen telecom networks, focusing on automation for 6G and legacy systems.
-- **Swisscom Autonomous Networks (Feb 23):** Advancing autonomous network transformation using Ericsson's Intelligent Automation Platform (EIAP) and RAPPs, to be showcased at MWC 2026.
-- **Ookla 5G Slice Testing (Feb 23):** Announced industry-first methodology for testing 5G network slices with Ookla.
-- **MWC 2026 6G Demo (Feb 2026):** Will demo 6G capabilities alongside Apple and MediaTek, emphasizing ecosystem readiness.
-- **AI-Ready RAN Portfolio Launch (Feb 17):** Unveiled new AI-ready radios (AIR 3286, AIR 3211 for high-power FDD M-MIMO; AIR 3267, AIR 6492 for TDD), antennas, and AI RAN software ahead of MWC 2026. Features neural network accelerators in silicon for real-time AI inference (AI-managed beamforming, coverage prediction, low-latency mobility), targeting 5G-Advanced performance gains for AI/AR apps and uplink-heavy traffic.
-
-- **MWC 2026 Open RAN Demo (Feb 18-19):** At pre-MWC event, Ericsson highlighted Open RAN integration plans, building on prior work like AT&T's 1Finity small cell. Emphasizes disaggregated hardware/software portability across silicon platforms (custom Ericsson/Intel silicon over Nvidia GPUs for AI-RAN to avoid lock-in).
-
-- **5G RAN Automation Leadership (Feb 13):** Ericsson topped ABI Research's ranking for 5G RAN Automation Platforms with its Intelligent Automation Platform (EIAP). Supports Open RAN via multi-vendor interoperability, R1 interfaces, and an open rApp ecosystem (90+ members, 90+ rApps).
-
-- **5G Advanced with MasOrange (Feb 2026):** Announced 5G Advanced rollout with MasOrange in Spain, focused on proprietary RAN upgrades.
+- **Mistral AI Partnership (Feb 23, 2026):** Collaborating to develop advanced AI agents for next-gen telecom automation.
+- **Swisscom Autonomous Networks (Feb 23, 2026):** Advancing autonomous network transformation using Ericsson's Intelligent Automation Platform (EIAP) and RAPPs.
 
 ### Key Partnerships
-- **AT&T:** Scaling commercial Open RAN sites; targeting 70% of traffic on open infrastructure by 2026.
-- **Orange France:** Two-year Cloud RAN/Open RAN trial (Nov 2025).
-- **VodafoneThree, MasOrange:** Autonomous networks.
+- **SoftBank:** AI-RAN orchestration interworking.
+- **AT&T / Aira Technologies:** Developing AI-native RAN rApps for intent-based deployments.
+- **Apple / MediaTek / Qualcomm:** 6G ecosystem and hardware prototyping.
+- **Swisscom / MasOrange:** Autonomous network rollouts and 5G Advanced.
 
 ### Financial Performance (FY2025)
 - **Net Sales:** SEK 236.7B (organic +2%)
 - **Adjusted EBITA:** SEK 42.9B (+58% YoY), margin 18.1%
 - **Net Income:** SEK 28.7B (vs 0.4B in 2024)
 - **Free Cash Flow:** SEK 26.8B (11.3% of sales)
-- **Guidance 2026:** RAN market flat; growth in mission-critical/enterprise; increased R&D in AI-native networks.
+- **Guidance 2026:** RAN market flat; growth in mission-critical/enterprise; focus on AI-native ROI.
 
 ---
 
@@ -52,20 +44,18 @@ Ericsson is a Swedish multinational telecom equipment and services company headq
 
 | Name | Role | Most Recent Public Topic |
 |------|------|--------------------------|
-| Börje Ekholm | President & CEO | Q4 2025 earnings, AI-native network strategy |
-| Per Narvinger | Head of Business Area Networks | Networks portfolio leadership |
-| Yossi Cohen | Head of Market Area Americas | US Open RAN expansion (AT&T) |
-| Erik Ekudden | CTO | AI RAN software, Silicon development |
-| Niklas Heuveldop | Head of Global Communications Platform & CEO of Vonage | Vonage/UC platform integration |
-| Jenny Lindqvist | Head of Business Area Cloud Software & Services | Cloud RAN, Open RAN trials |
-| Åsa Tamsons | Head of Enterprise Wireless Solutions & CEO of Cradlepoint | Enterprise wireless, private 5G |
-| Lars Sandström | CFO | Financial performance, cash flow |
+| Börje Ekholm | President & CEO | MWC 2026 strategy, AI-native network ROI. |
+| Per Narvinger | Head of Business Area Networks | AI-ready radio portfolio launch (Feb 2026). |
+| Yossi Cohen | Head of Market Area Americas | US Open RAN expansion (AT&T). |
+| Erik Ekudden | CTO | 6G prototyping and Ericsson Silicon accelerators. |
+| Niklas Heuveldop | CEO of Vonage | Network API monetization and Vonage integration. |
+| Jenny Lindqvist | Head of Business Area Cloud Software & Services | Cloud RAN and SMO platform evolution. |
+| Åsa Tamsons | Head of Enterprise Wireless Solutions | Private 5G and Enterprise AI applications. |
 
 ---
 
 ## Sources
-- Ericsson Official Site (ericsson.com)
+- Ericsson Official MWC 2026 Event Page (ericsson.com)
+- Press releases: Feb 27 (SoftBank), Feb 24 (AWS), Feb 17 (AI-RAN Portfolio)
 - Q4 2025 Earnings Release (Jan 2026)
-- MWC 2026 Announcements
-- ABI Research Ranking (Feb 2026)
-- Press releases: Feb 17, Feb 13, Feb 2026
+- Light Reading: AT&T/Aira MWC 2026 Preview

@@ -33,3 +33,21 @@ When reporting on Rakuten Symphony, **DO NOT** use old "SymXXX" product naming (
 - Replace **Symworld** with **Rakuten Symphony industrial marketplace** or **network orchestration platform**.
 - Use descriptive terms for all other former "Sym" products (e.g., "network observability" instead of Symview).
 - Always check generated responses to ensure no "Sym" branded product names remain.
+
+## Memory Hygiene Protocol (Added 2026-03-01)
+
+### Topic File Structure
+All memory/{Target}.md files must follow this three-section structure:
+- `## Latest` — max 3 recent updates, max 50 lines. Always load.
+- `## Profile` — static bio/background. Max 30 lines. Always load.
+- `## Archive` — older entries. Only load when explicitly asked.
+
+### File Size Guidance
+- memory/{Target}.md: soft cap ~150 lines (flag to user if exceeded)
+- MEMORY.md: hard cap 200 lines (OpenClaw truncates after this)
+- Daily session files: compress to 5-bullet summary after 48h via heartbeat
+
+### Session Load Policy
+Load at session start: today's + yesterday's daily files only.
+All other daily files: skip unless user asks.
+Topic files: load on-demand per target mentioned, not all upfront.

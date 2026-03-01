@@ -67,7 +67,7 @@
         "api": "google-generative-ai",
         "models": [
           {
-            "id": "gemini-3-flash",
+            "id": "gemini-3-flash-preview",
             "name": "Gemini 3 Flash",
             "cost": {
               "input": 0.0001,
@@ -116,29 +116,29 @@
       "verboseDefault": "on",
       "thinkingDefault": "low",
       "model": {
-        "primary": "minimax/MiniMax-M2.5",
+        "primary": "google/gemini-3-flash-preview",
         "fallbacks": [
-          "moonshot/kimi-k2.5",
-          "xai/grok-4-1-fast",
-          "google/gemini-3-flash",
           "google/gemini-2.5-flash-lite-preview-09-2025",
+          "moonshot/kimi-k2.5",
           "minimax/MiniMax-M2.5"
         ]
       },
       "models": {
+        "google/gemini-3-flash-preview": {
+          "alias": "kenji"
+        },
+        "google/gemini-2.5-flash-lite-preview-09-2025": {
+          "alias": "kenji-lite"
+        },
         "moonshot/kimi-k2.5": {
           "alias": "reasoner"
         },
         "xai/grok-4-1-fast": {
-          "alias": "grok-4-1-fast"
-        },
-        "google/gemini-3-flash": {
-          "alias": "fast-search"
+          "alias": "grok-search"
         },
         "minimax/MiniMax-M2.5": {
-          "alias": "Minimax"
-        },
-        "google/gemini-3.1-pro-preview": {}
+          "alias": "deep-thinker"
+        }
       },
       "workspace": "/home/node/.openclaw/workspace",
       "maxConcurrent": 4
@@ -189,7 +189,7 @@
   "gateway": {
     "port": 50045,
     "mode": "local",
-    "bind": "loopback",
+    "bind": "lan",
     "controlUi": {
       "allowedOrigins": [
         "https://control.maximh.us"
