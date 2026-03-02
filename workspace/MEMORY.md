@@ -7,18 +7,18 @@ When asked for an "updated intelligence report" on a company, the response MUST 
 1.  **Company Focus (Current Intelligence):** Summarizing the latest operational/product announcements.
 2.  **Key Decision Makers:** A table listing the primary executives. This table must contain the following columns: Name, Responsibilities, and Most Recent Public Topic (the subject of their latest known public statement or the key area of their responsibility if a recent topic is unavailable).
 
-## Research Protocol (Updated Feb 15, 2026)
+## Research Protocol (Updated 2026-03-02)
 **Tools:**
-- **Tavily:** Deep, detailed profiles (bio, history, citations). Use sub-agent.
-- **xAI (Grok):** Latest public updates, news, statements. Use web_search.
-- **Crawl4AI:** Max info from URLs. Installed (needs MCP start/Docker).
+- `web_search` — PRIMARY tool. Uses Gemini Google Search Grounding (fast, ~2–5s, AI-synthesised with citations). Replaces Grok/Tavily.
+- `web_fetch` — fetch and extract a specific URL.
 
 **Workflow:**
-1. Tavily (deep dive).
-2. xAI (current).
-3. Crawl4AI (URL fetch).
-4. Synthesize report.
-5. **Save to memory:** Write findings to `memory/{Target}.md` after each session.
+1. Deep dive / full profile → ONE `web_search` with comprehensive query. Add a second targeted call only if needed. Max 2 calls.
+2. Quick news → ONE `web_search` with freshness filter.
+3. URL content → `web_fetch`.
+4. **Save to memory:** Write findings to `memory/{Target}.md` after each session.
+
+**Key rules:** Max 2 `web_search` calls per task. One well-formed query covers what used to need 3 serial searches. Never use Grok/xAI (removed — was 30s/call).
 
 ## Cross-Reference Rule (Updated Feb 18, 2026)
 When you discover a new person at a company (exec, key player, event speaker), you MUST:

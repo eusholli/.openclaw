@@ -160,7 +160,7 @@
     "web": {
       "search": {
         "enabled": true,
-        "provider": "grok"
+        "provider": "gemini"
       },
       "fetch": {
         "enabled": true

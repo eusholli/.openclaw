@@ -1,57 +1,24 @@
-# Cisco Intelligence Report
+# Cisco
 
-**Last Updated:** February 24, 2026
+## Latest
+- **AI Infrastructure Strategy (2026):** Cisco is transitioning into an AI infrastructure powerhouse, targeting $3B in AI revenue from hyperscalers by FY2026. Over $2B in AI orders were secured in FY2025.
+- **Hardware & Silicon Innovations:** Released Silicon One G300 (102.4 Tbps) and Cisco 8223 router (51.2 Tbps) to support high-density AI clusters. Refreshed data center portfolio with N9100 series powered by Nvidia Spectrum-4.
+- **AgenticOps & Automation:** Launched "AgenticOps" at Cisco Live 2026, an AI automation framework integrating telemetry from Meraki, ThousandEyes, and Splunk for autonomous network troubleshooting and optimization.
 
-## Company Focus (Current Intelligence)
+## Profile
+Cisco is a global leader in networking, security, and collaboration. It is currently shifting from hardware-centric sales to a subscription-based software model, with ARR reaching $31.4B in early 2026 (~50% of total revenue).
 
-**Cisco Systems** is a US-based multinational digital communications technology conglomerate, headquartered in San Jose, California. It competes in enterprise networking, cybersecurity, collaboration (Webex), and AI infrastructure.
+### Key Decision Makers
+| Name | Responsibilities | Most Recent Public Topic |
+| :--- | :--- | :--- |
+| Chuck Robbins | Chair & CEO | AI infrastructure powerhouse transformation & 2026 agenda |
+| Jeetu Patel | Chief Product Officer | AI-driven operations (AgenticOps) and unified product vision |
+| Mark Patterson | Chief Financial Officer | Shift to subscription-based revenue model and FY2026 forecasts |
+| Oliver Tuszik | Chief Sales Officer | Global sales strategy for AI-ready networking and security |
+| Ammar Maraqa | Chief Strategy Officer | AI-first corporate strategy and market positioning |
+| Carrie Palin | Chief Marketing Officer | Brand evolution for the AI-networking era |
+| Liz Centoni | Chief Customer Experience Officer | Delivering AI-enhanced digital resilience and customer value |
 
-### Strategic Focus (2025-2026)
-
-- **Agentic AI & AI Defense:** Major push into agentic AI for enterprise security and network operations.
-- **Secure AI Factory:** Launching sovereign AI infrastructure solutions with NVIDIA partnerships.
-- **AgenticOps:** Expanding AI operations across networking portfolio (campus, branch, data center).
-- **Security:** Redefining security for the agentic era, secure AI adoption.
-- **Splunk Integration:** Leveraging Splunk for AI-driven security insights.
-
----
-
-## Latest Updates (Feb 2026)
-
-- **Splunk's CISO Report (Feb 24):** Released annual "The CISO Report: From Risk to Resilience in the AI Era," highlighting agentic AI's role in cybersecurity resilience.
-- **Q2 FY2026 Earnings (Feb 11):** Reported second-quarter results; raised full-year 2026 revenue forecast to $61.2-61.7B (up from $60.2-61B). Stock ~$79.
-- **AI Innovations Launch (Feb 10):** Major updates to AI Defense, Secure Access Service Edge (SASE), and AgenticOps across portfolio.
-- **Secure AI Factory in Australia (Feb):** Partnership with Sharon AI and NVIDIA for Australia's first Cisco Secure AI Factory, focusing on sovereign data.
-- **CEO AI Bubble Warning (Feb ~19):** Chuck Robbins warned of AI hype cycle similar to dotcom crash, advising to "prepare for the worst."
-- **Cisco AI Summit 2026 (Early Feb):** Focused on agentic systems, breaking physical barriers, and operationalizing AI.
-
----
-
-## Financial Performance
-
-| Metric | Details |
-|--------|---------|
-| **Q2 FY2026** | Results released Feb 11 |
-| **FY2026 Revenue Guidance** | $61.2-61.7B (raised) |
-| **Stock Price** | ~$79 |
-
----
-
-## Key Decision Makers
-
-| Name | Role | Most Recent Public Topic |
-|------|------|--------------------------|
-| Chuck Robbins | CEO | AI bubble warning, Q2 earnings |
-| Jeetu Patel | EVP & GM, Security & Collaboration | AI Defense, Splunk integration |
-| Jonathan Davidson | EVP & GM, Networking | AgenticOps, AI infrastructure |
-| Francine Katsoudas | EVP & Chief People Officer | People operations |
-
----
-
-## Sources
-- Cisco Newsroom (Feb 2026)
-- Reuters (Feb 11)
-- Q2 FY2026 Earnings Call
-- Australian Financial Review
-- Network World
-- Forbes
+## Archive
+- Cisco Live Amsterdam 2026 announcements regarding "Cisco Unified Edge" for edge AI processing.
+- Silicon One P200 networking chip release (51.2 Tbps throughput).

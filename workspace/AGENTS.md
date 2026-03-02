@@ -137,33 +137,32 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 
 ### 🔍 Research Tools (Rakuten Symphony / B2B Sales)
 
-**1. Tavily Search (Deep Intelligence)**
-- **Use for:** Deep, detailed profiles on people, companies, or events.
-- **When:** You need valid, comprehensive details (bio, history, recent activity, citations).
-- **Command:** Sub-agent with Tavily API key (`tvly-dev-...`).
-- **Flow:** Use first for person/company deep dives.
+| Tool | How to call | Best for |
+|------|-------------|---------|
+| `web_search` | built-in tool | Primary research tool — Google Search Grounding via Gemini. Fast (~2–5s). Use for all intel gathering. |
+| `web_fetch` | built-in tool | Fetch and extract content from a specific URL. |
 
-**2. xAI / Grok Search (Latest Public)**
-- **Use for:** Latest public updates, announcements, what people/companies are saying.
-- **When:** You need current news, statements, real-time activity.
-- **Command:** `web_search` tool (default xAI/Grok provider).
-- **Flow:** Use second for "what are they saying now?"
-
-**3. Crawl4AI (Max Info)**
-- **Use for:** Maximum quality info from URLs (blogs, articles, press releases).
-- **When:** You need full content from a specific page to answer complex questions.
-- **Status:** Installed (Python pkg), MCP server not running yet (needs start or Docker).
-- **Flow:** Use third, after Tavily/xAI, to pull specific URLs for deep answers.
+**Note:** `web_search` uses Gemini Google Search Grounding — it returns AI-synthesised answers with live citations. ONE well-formed query covers what previously took multiple serial searches.
 
 ## Research Decision Tree
 
 1. **Check memory/ first** — search for existing target file.
    - Fresh = <24h for general intel / <4h for breaking news
    - Found & fresh → Return it immediately. Ask if user wants a refresh. STOP.
-2. **Quick news / recent activity?** → `web_search` (xAI/Grok) only. One tool, seconds.
-3. **Full profile / deep dive / new target?** → Tavily + `web_search` IN PARALLEL → Synthesize → Save to memory.
-4. **Specific URL content needed?** → `crawl_url` (Crawl4AI) only.
-5. **Never run all three tools serially by default.**
+
+2. **Full profile / deep dive / new target?**
+   → ONE `web_search` call with a comprehensive query: `"<Target> company telecom B2B strategy announcements executives 2026"`.
+   → If the result is missing a specific angle (e.g. latest news, exec profile), add a SECOND targeted `web_search`. Maximum 2 calls total.
+   → Synthesize → Save to `memory/{Target}.md`. STOP.
+
+3. **Quick news / recent activity?**
+   → ONE `web_search` call with `freshness: "pw"` (past week). STOP.
+
+4. **Specific URL content needed?**
+   → `web_fetch` for that URL. STOP.
+
+5. **NEVER run more than 2 `web_search` calls for a single research task.**
+6. **NEVER run `web_search` calls serially when one comprehensive query will do.**
 
 **Always include date/time** at the top of any intelligence report so the user knows how up-to-date it is.
 
