@@ -1,65 +1,33 @@
 # Ericsson
 
 ## Latest
-- **Mar 6, 2026**: Partnered with **Dialog Axiata PLC** to deploy a **5G RAN** and **Cloud Native Infrastructure Solution** in Sri Lanka.
-- **Mar 6, 2026**: Partnered with **Ethio Telecom** to modernize 1,500 sites (4G/5G) under the "Next Horizon Strategy."
-- **Mar 6, 2026**: Partnered with **Türk Telekom** on **6G research** in Türkiye (shaping standards and reliability).
-- **Mar 6, 2026**: Partnered with **Econet Wireless Zimbabwe** to advance **AI-powered networks** for sustainability.
-- **Mar 6, 2026**: Signed MoU with **Viettel** (Vietnam) to develop **autonomous network** tech (closed-loop automation).
-- **Mar 6, 2026**: Announced collaboration with **Qualcomm Technologies** to prototype **AI/AR applications** on AI-native and context-aware 6G networks.
-- **Mar 6, 2026**: Awarded the **GTI Annual Award** for **Intent-Aware Slicing**.
-- **Mar 5, 2026**: Partnered with **4iG Group** for a 500-site 5G network rollout in **North Macedonia**.
-- **Mar 5, 2026**: Signed a three-year strategic agreement with **Far EasTone** (FET).
-- **Mar 5, 2026**: Introducing new **5G Standalone (5G SA)** capabilities for **BT** in the UK.
-- **Mar 5, 2026**: Demonstrated **AI-native RAN operations** in collaboration with **AT&T** and **Aira Technologies**, using GenAI to translate intent into deployable rApps.
-- **Mar 5, 2026**: Signed landmark deal with **Ethio Telecom** for network expansion and upgrades.
-- **Mar 5, 2026**: Achieved **Level 4 network autonomy**, enabling networks to make operational decisions with minimal human intervention.
-- **Mar 5, 2026**: Multi-year alliance with **NTT DATA** to advance **private 5G** and **edge AI** for enterprises.
-- **Mar 5, 2026**: Global partnership with **Mastercard** to expand digital wallet and payment services.
-- **Mar 5, 2026**: Extended multi-year microwave deal with **Safaricom** in Kenya.
-- **Mar 5, 2026**: Partnered with **Turkcell** to accelerate **5G Advanced** innovation (RedCap, Cloud RAN, AI-driven rApps).
-- **Mar 5, 2026**: Trialing a 5G tool with **DNB Malaysia** to detect scam transmitters using network software and Ericsson Security Manager.
-- **Mar 5, 2026**: Highlighting **6G uplink** demands for physical AI applications like humanoid robots and smart glasses.
-- **Mar 4, 2026**: Partnered with **Qualcomm** on **6G radio innovations** for uplink capacity.
-- **Mar 4, 2026**: Received **GTI Annual Award** for **Intent-Aware Slicing**.
-- **Mar 4, 2026**: Demonstrated world-first **1 Tbps 5G Core** on **Google Cloud**.
-- **Mar 4, 2026**: Achieved milestone with **AT&T** demonstrating **AI-native Link Adaptation** (up to 20% gain).
-- **Mar 4, 2026**: Announced cooperation with **Nokia** for **Autonomous Networks**.
-- **Mar 4, 2026**: Trials with **T-Mobile US** running **Cloud RAN** on **Nvidia AI infrastructure**.
-- **Mar 4, 2026**: Deepening collaboration with **Intel** for AI-native 6G.
-- **Mar 3, 2026**: Unveiled **ten new AI-ready radios** with integrated neural network accelerators.
-- **Mar 5, 2026**: Demonstrated **AI-native RAN operations** in collaboration with **AT&T** and **Aira Technologies**, using GenAI to translate intent into deployable rApps.
-- **Mar 5, 2026**: Signed landmark deal with **Ethio Telecom** for network expansion and upgrades.
-- **Mar 5, 2026**: Achieved **Level 4 network autonomy**, enabling networks to make operational decisions with minimal human intervention.
-- **Mar 5, 2026**: Multi-year alliance with **NTT DATA** to advance **private 5G** and **edge AI** for enterprises.
-- **Mar 5, 2026**: Global partnership with **Mastercard** to expand digital wallet and payment services.
-- **Mar 5, 2026**: Extended multi-year microwave deal with **Safaricom** in Kenya.
-- **Mar 5, 2026**: Partnered with **Turkcell** to accelerate **5G Advanced** innovation (RedCap, Cloud RAN, AI-driven rApps).
-- **Mar 5, 2026**: Trialing a 5G tool with **DNB Malaysia** to detect scam transmitters using network software and Ericsson Security Manager.
-- **Mar 5, 2026**: Highlighting **6G uplink** demands for physical AI applications like humanoid robots and smart glasses.
-- **Mar 4, 2026**: Partnered with **Qualcomm** on **6G radio innovations** for uplink capacity.
-- **Mar 4, 2026**: Received **GTI Annual Award** for **Intent-Aware Slicing**.
-- **Mar 4, 2026**: Demonstrated world-first **1 Tbps 5G Core** on **Google Cloud**.
-- **Mar 4, 2026**: Achieved milestone with **AT&T** demonstrating **AI-native Link Adaptation** (up to 20% gain).
-- **Mar 4, 2026**: Announced cooperation with **Nokia** for **Autonomous Networks**.
-- **Mar 4, 2026**: Trials with **T-Mobile US** running **Cloud RAN** on **Nvidia AI infrastructure**.
-- **Mar 4, 2026**: Deepening collaboration with **Intel** for AI-native 6G.
-- **Mar 3, 2026**: Unveiled **ten new AI-ready radios** with integrated neural network accelerators.
+- **Mar 6, 2026**: **6G OTA Breakthrough:** Completed the world's first **pre-standard 6G over-the-air (OTA) session** in the US (AI-native/cloud architecture).
+- **Mar 6, 2026**: **Dialog Axiata (Sri Lanka):** Signed agreement to deploy 5G RAN and **Cloud Native Infrastructure Solution (CNIS)** nationwide.
+- **Mar 6, 2026**: **Türkiye 6G MoU:** Strategic research collaboration with **Türk Telekom** and **Turkcell** (5G Advanced) to shape emerging standards.
+- **Mar 5, 2026**: **Ethio Telecom Expansion:** Signed a landmark deal for modernization of 1,500 mobile sites.
+- **Mar 4, 2026**: Published 2025 Annual Report; reported SEK 28.7B net income (up from SEK 0.4B in 2024) despite a 5% sales decline, driven by iconectiv divestment and cost cuts.
+- **Mar 4, 2026**: Announced **Level 4 Network Autonomy** achievement, enabling networks to make operational decisions with minimal human intervention.
+- **Mar 2, 2026**: Announced that **Ericsson Cloud RAN** software is now portable to Nvidia AI infrastructure via Nvidia Aerial CUDA; live demos with T-Mobile at MWC.
+- **Mar 2, 2026**: Strategic partnership with **Intel** to accelerate AI-native 6G; 6G testbeds targeted for late 2027 with commercial availability by 2030.
+- **Mar 2, 2026**: Signed 3-year agreement with **Far EasTone (FET)** to accelerate 5G-Advanced and move toward AI-native 6G development.
+- **Mar 2, 2026**: Founding member of **OCUDU (Open CU/DU)** ecosystem; demoing 6G prototypes with Apple and MediaTek at MWC.
+- **Mar 1, 2026**: Founding member of **NVIDIA's AI-Native 6G Alliance** to build open 6G platforms.
+- **Mar 2026**: Announced reduction of ~1,600 positions in Sweden for 2026 as part of ongoing efficiency efforts.
 
 ## Profile
-- **Role**: Global telecom infrastructure leader, pivoting to an **"AI-Native"** strategy with internal silicon accelerators.
-- **Key Strategy**: AI-Native RAN using **Ericsson Silicon** for real-time inference; leading AT&T's $14B Open RAN transition.
-- **Strategic Focus**: 5G-Advanced monetization, 6G prototyping, and network automation via **EIAP** (Intelligent Automation Platform).
+- **Role**: Global telecom leader focusing on "AI for networks and networks for AI."
+- **Key Strategy**: AI-Native RAN using **Ericsson Silicon** and high-level network autonomy (Level 4 achieved 2025).
+- **Strategic Focus**: 5G-Advanced modernization, 6G path-finding with Intel/NVIDIA, and programmable network platforms (Telstra, Vodafone).
 
 ## Key Decision Makers
 | Name | Role | Most Recent Public Topic |
 |------|------|--------------------------|
-| Börje Ekholm | President & CEO | MWC 2026: Hyperconnectivity & security |
-| Per Narvinger | Head of Networks | AI-powered autonomous networks (Level 4) |
-| Yossi Cohen | Head of Americas | US Open RAN deployment (AT&T) |
-| Erik Ekudden | CTO | AI-native 6G alliance with Intel |
-| Jenny Lindqvist | Head of Cloud Software/Services | Agentic rApp as a Service on AWS |
-| Elena Fersman | VP, Head of AI Innovation | AI-native 6G & Digital Twins |
+| Börje Ekholm | President & CEO | 2025 Annual Report & AI-native profitability |
+| Per Narvinger | Head of Networks | AI-ready radio portfolio & Intel 6G alliance |
+| Yossi Cohen | Head of Americas | US Open RAN expansion (AT&T) |
+| Erik Ekudden | CTO | Level 4 Network Autonomy & 6G silicon |
+| Jenny Lindqvist | Head of Cloud/Services | FET 5G-Advanced agreement & SMO |
+| Stella Medlicott | SVP Chief Marketing & Comms | Departing March 31, 2026 |
 
 ## Archive
 - **Mar 2-4, 2026**: Multiple 6G demos (Apple, MediaTek) and MRSS spectrum sharing.

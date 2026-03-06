@@ -137,12 +137,12 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 
 ### 🔍 Research Tools (Rakuten Symphony / B2B Sales)
 
-| Tool | How to call | Best for |
-|------|-------------|---------|
-| `web_search` | built-in tool | Primary research tool — Google Search Grounding via Gemini. Fast (~2–5s). Use for all intel gathering. |
-| `web_fetch` | built-in tool | Fetch and extract content from a specific URL. |
+| Tool | How to call | Best for | Latency |
+|------|-------------|---------|---------|
+| `web_search` | built-in | Primary search — Brave Search. Fast, structured results. | ~1–3s |
+| `web_fetch` | built-in | Fetch and extract content from a specific URL. Uses Firecrawl for JS-heavy pages automatically. | ~2–5s |
 
-**Note:** `web_search` uses Gemini Google Search Grounding — it returns AI-synthesised answers with live citations. ONE well-formed query covers what previously took multiple serial searches.
+**Note:** `web_search` uses Brave Search API — fast structured results. ONE well-formed query covers what previously took multiple serial searches.
 
 ## Research Decision Tree
 
@@ -151,12 +151,12 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
    - Found & fresh → Return it immediately. Ask if user wants a refresh. STOP.
 
 2. **Full profile / deep dive / new target?**
-   → ONE `web_search` call with a comprehensive query: `"<Target> company telecom B2B strategy announcements executives 2026"`.
-   → If the result is missing a specific angle (e.g. latest news, exec profile), add a SECOND targeted `web_search`. Maximum 2 calls total.
+   → ONE `web_search` with a comprehensive query: `"<Target> company telecom B2B strategy announcements executives 2026"`.
+   → If missing a specific angle (e.g. latest news, exec profile), add a SECOND targeted `web_search`. Maximum 2 calls total.
    → Synthesize → Save to `memory/{Target}.md`. STOP.
 
 3. **Quick news / recent activity?**
-   → ONE `web_search` call with `freshness: "pw"` (past week). STOP.
+   → ONE `web_search` with `freshness: "pw"` (past week). STOP.
 
 4. **Specific URL content needed?**
    → `web_fetch` for that URL. STOP.
@@ -165,6 +165,24 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 6. **NEVER run `web_search` calls serially when one comprehensive query will do.**
 
 **Always include date/time** at the top of any intelligence report so the user knows how up-to-date it is.
+
+## Timing Protocol
+
+For every `web_search` or `web_fetch` call:
+
+1. Before the call, note internally: `[SEARCH START: HH:MM:SS tool=<tool_name> query="..."]`
+2. After receiving results, note: `[SEARCH END: HH:MM:SS — Δt=Xs]`
+3. At end of each research task, log a **Performance Log** entry to `memory/YYYY-MM-DD.md`:
+
+```
+## Performance Log
+- HH:MM task="<task description>"
+  - web_search: Δt=Xs
+  - total: Δt=Xs
+```
+
+4. If any single call exceeds 10s, flag it in the response: `[SLOW: <tool> took Xs]`
+5. Report total search time at end of multi-step research tasks so the user sees the overhead.
 
 **After any successful research task, always update the relevant memory file with the new findings. Don't just deliver results — persist the intelligence for future sessions.**
 

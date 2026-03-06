@@ -72,44 +72,28 @@
           "api": "anthropic-messages"
         },
         {
-          "id": "MiniMax-M2.1",
-          "name": "MiniMax M2.1",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0.3,
-            "output": 1.2,
-            "cacheRead": 0.03,
-            "cacheWrite": 0.12
-          },
-          "contextWindow": 200000,
-          "maxTokens": 8192
-        },
-        {
-          "id": "MiniMax-M2.1-lightning",
-          "name": "MiniMax M2.1 Lightning",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0.3,
-            "output": 1.2,
-            "cacheRead": 0.03,
-            "cacheWrite": 0.12
-          },
-          "contextWindow": 200000,
-          "maxTokens": 8192
-        },
-        {
           "id": "MiniMax-VL-01",
           "name": "MiniMax VL 01",
           "reasoning": false,
           "input": [
             "text",
             "image"
+          ],
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cacheRead": 0.03,
+            "cacheWrite": 0.12
+          },
+          "contextWindow": 200000,
+          "maxTokens": 8192
+        },
+        {
+          "id": "MiniMax-M2.5-highspeed",
+          "name": "MiniMax M2.5 Highspeed",
+          "reasoning": true,
+          "input": [
+            "text"
           ],
           "cost": {
             "input": 0.3,
@@ -143,6 +127,23 @@
       "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
       "api": "google-generative-ai",
       "models": [
+        {
+          "id": "gemini-3.1-flash-lite-preview",
+          "name": "Gemini 3.1 Flash Lite",
+          "cost": {
+            "input": 0.0001,
+            "output": 0.0004,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 1048576,
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "api": "google-generative-ai"
+        },
         {
           "id": "gemini-3-flash-preview",
           "name": "Gemini 3 Flash",
