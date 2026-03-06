@@ -192,7 +192,8 @@
     "bind": "lan",
     "controlUi": {
       "allowedOrigins": [
-        "https://control.maximh.us"
+        "https://control.maximh.us",
+        "http://localhost:50045"
       ]
     },
     "auth": {
