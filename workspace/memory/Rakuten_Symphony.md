@@ -20,7 +20,7 @@
 | Hiroshi "Mickey" Mikitani | CEO (Rakuten Group) | MWC 2026 keynote (AI & 6G) |
 | Sharad Sriwastawa | President | Operational leadership & 1&1 Germany |
 | Geoff Hollingworth | CMO | "Intelligent Growth: Networks as Software" |
-| Partha Seetala | Chief AI Officer | AI adoption & Knowledge Hub |
+| Partha Seetala | President, Cloud Business Unit | Google Distributed Cloud Integration (MWC 2026) |
 | Subha Srinivasan | SVP, Global Service Delivery | Digital Twins & autonomous networks |
 
 ## Archive
