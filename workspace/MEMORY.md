@@ -34,6 +34,9 @@ When reporting on Rakuten Symphony, **DO NOT** use old "SymXXX" product naming (
 - Use descriptive terms for all other former "Sym" products (e.g., "network observability" instead of Symview).
 - Always check generated responses to ensure no "Sym" branded product names remain.
 
+## Response Reliability Standard (Added 2026-03-06)
+Every research task must conclude with a comprehensive delivery of the findings. If a task is complex, you may provide incremental status updates, but the final response in that session must contain the full synthesized report. Do not expect the user to hunt for files or wait for a subsequent session for the core value; deliver the intelligence directly.
+
 ## Memory Hygiene Protocol (Added 2026-03-01)
 
 ### Topic File Structure
