@@ -1,17 +1,13 @@
-# Justin Hotard - Nokia
-
-**Updated:** 2026-02-27
+# Justin Hotard
 
 ## Profile
-- **Role:** President and Chief Executive Officer (CEO), Nokia (Effective April 1, 2025).
-- **Background:** Joined Nokia from Hewlett Packard Enterprise (HPE), where he was EVP and GM of High Performance Computing, AI, and Labs.
-- **Specialization:** High-performance computing (HPC), AI infrastructure, and cloud-native solutions.
+- **Role**: President and CEO of Nokia.
+- **Background**: Joined Nokia in early 2024 to lead its AI-driven infrastructure pivot. Previously at Hewlett Packard Enterprise (HPE).
 
-## Recent Activity
-- **March 2026 (MWC):** Delivering keynote "Blueprints for the Intelligent Future," outlining Nokia's role in the AI supercycle.
-- **April 2025:** Succeeded Pekka Lundmark as CEO to pivot Nokia toward AI and cloud-driven growth.
-- **Strategy:** Focused on making Nokia an "AI-native" networking company.
+## Latest
+- **Mar 4, 2026**: Delivered "Blueprints for the Intelligent Future" keynote at MWC Barcelona.
+- **Mar 4, 2026**: Announced Nokia's roadmap for commercial AI-RAN: first trial in 2026, full release in 2027.
+- **Mar 2026**: Championing the 6G AI-native coalition with Nvidia and SoftBank.
 
-## Sources
-- **xAI:** MWC 2026 Speaker lineup.
-- **Nokia Official:** Leadership bios.
+## Archive
+- **Sources**: Nokia.com, MWC 2026 Keynote.
