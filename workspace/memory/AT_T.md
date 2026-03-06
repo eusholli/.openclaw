@@ -1,6 +1,10 @@
 # AT&T
 
 ## Latest
+- **Mar 6, 2026**: **Satellite Broadband:** Partnering with **AST SpaceMobile** for H1 2026 satellite broadband launch.
+- **Mar 6, 2026**: **Labor Update:** **CWA Orange Mobility** members are mobilizing as the contract expiration (March 6) is reached.
+- **Mar 6, 2026**: **Leadership Expansion:** **Tang Pham**'s role expanded to oversee national security programs within the federal business unit.
+- **Mar 5, 2026**: **"America's Best Guarantee":** Expanded guarantee to millions of households, now encompassing **AT&T Internet Air** and offering free **Internet Backup** for Fiber + Postpaid Wireless customers.
 - **Mar 2, 2026**: Collaborating with **Rakuten Symphony** at MWC to enhance operator network design and build solutions.
 - **Mar 2, 2026**: Founding member of **OCUDU (Open CU/DU)** under Linux Foundation Networking to advance open-source RAN for 5G, 6G, and AI-RAN.
 - **Mar 1, 2026**: Founding member of **NVIDIA's AI-Native 6G Alliance** to build open 6G platforms.

@@ -1,6 +1,10 @@
 # Rakuten Symphony
 
 ## Latest
+- **Mar 6, 2026**: **Satellite Connectivity:** Showcased OSS for satellite-based connectivity (AST SpaceMobile collaboration).
+- **Mar 6, 2026**: **Samsung vRAN Interop:** Completed interoperability testing of **Samsung's cloud-native vRAN and vCore** on the Rakuten Cloud-Native Platform.
+- **Mar 5, 2026**: **Google Cloud Integration:** Announced **Rakuten Cloud-Native Storage** is now built into **Google Distributed Cloud** Connected Servers.
+- **Mar 4, 2026**: **Strategic MoUs:** Partnered with **VEON's Beeline Uzbekistan** (Open RAN & AI), **Wind River** (Unified Cloud/Storage), and **Lightstorm** (Sovereign NaaS).
 - **Mar 2, 2026**: Announced new collaboration with **AT&T** at MWC to enhance operator network design and build solutions.
 - **Mar 2, 2026**: Kicking off **MWC Barcelona 2026** (Booth #2C70) with "Intelligent Growth" theme; featured sessions on AI-RAN and Distributed MIMO with NVIDIA.
 - **Feb 2026**: Achieved first full-year operating profit as standalone unit (FY2025 results).

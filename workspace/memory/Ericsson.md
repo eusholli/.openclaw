@@ -1,28 +1,32 @@
 # Ericsson
 
 ## Latest
+- **Mar 6, 2026**: **6G OTA Breakthrough:** Completed the world's first **pre-standard 6G over-the-air (OTA) session** in the US (AI-native/cloud architecture).
+- **Mar 6, 2026**: **Dialog Axiata (Sri Lanka):** Signed agreement to deploy 5G RAN and **Cloud Native Infrastructure Solution (CNIS)** nationwide.
+- **Mar 6, 2026**: **Türkiye 6G MoU:** Strategic research collaboration with **Türk Telekom** and **Turkcell** (5G Advanced) to shape emerging standards.
+- **Mar 5, 2026**: **Ethio Telecom Expansion:** Signed a landmark deal for modernization of 1,500 mobile sites.
+- **Mar 4, 2026**: Published 2025 Annual Report; reported SEK 28.7B net income (up from SEK 0.4B in 2024) despite a 5% sales decline, driven by iconectiv divestment and cost cuts.
+- **Mar 4, 2026**: Announced **Level 4 Network Autonomy** achievement, enabling networks to make operational decisions with minimal human intervention.
+- **Mar 2, 2026**: Announced that **Ericsson Cloud RAN** software is now portable to Nvidia AI infrastructure via Nvidia Aerial CUDA; live demos with T-Mobile at MWC.
+- **Mar 2, 2026**: Strategic partnership with **Intel** to accelerate AI-native 6G; 6G testbeds targeted for late 2027 with commercial availability by 2030.
+- **Mar 2, 2026**: Signed 3-year agreement with **Far EasTone (FET)** to accelerate 5G-Advanced and move toward AI-native 6G development.
 - **Mar 2, 2026**: Founding member of **OCUDU (Open CU/DU)** ecosystem; demoing 6G prototypes with Apple and MediaTek at MWC.
-- **Mar 2, 2026**: Technical alignment with **Qualcomm** on fundamental 6G radio innovations, validated via collaborative lab prototypes; live demos at MWC 2026.
 - **Mar 1, 2026**: Founding member of **NVIDIA's AI-Native 6G Alliance** to build open 6G platforms.
-- **Mar 1, 2026**: CMO **Stella Medlicott** (SVP, Chief Marketing & Communications Officer) stepping down March 31, 2026.
-- **Feb 27, 2026**: Achieved world's first live **6G pre-standard OTA trial** in Texas ($150M+ US factory investment; only at-scale telecom equipment maker in US).
-- **Feb 2026**: Launched **Agentless EDR** for telco networks — extends Security Manager XDR portfolio; continuous threat detection without intrusive endpoint agents.
-- **Feb 2026**: Industry-first **5G Network Slicing SLA verification** solution with Ookla — real-time validation of slice performance.
-- **Feb 2026**: New **R&D Center in Yokohama** (Minato Mirai 21); operations start April 2026, inauguration H1 2027; up to 300 R&D positions.
+- **Mar 2026**: Announced reduction of ~1,600 positions in Sweden for 2026 as part of ongoing efficiency efforts.
 
 ## Profile
-- **Role**: Global telecom infrastructure leader, pivoting to an **"AI-Native"** strategy with internal silicon accelerators.
-- **Key Strategy**: AI-Native RAN using **Ericsson Silicon** for real-time inference; leading AT&T's $14B Open RAN transition.
-- **Strategic Focus**: 5G-Advanced monetization, 6G prototyping, and network automation via **EIAP** (Intelligent Automation Platform).
+- **Role**: Global telecom leader focusing on "AI for networks and networks for AI."
+- **Key Strategy**: AI-Native RAN using **Ericsson Silicon** and high-level network autonomy (Level 4 achieved 2025).
+- **Strategic Focus**: 5G-Advanced modernization, 6G path-finding with Intel/NVIDIA, and programmable network platforms (Telstra, Vodafone).
 
 ## Key Decision Makers
 | Name | Role | Most Recent Public Topic |
 |------|------|--------------------------|
-| Börje Ekholm | President & CEO | MWC 2026 strategy & AI-native ROI |
-| Per Narvinger | Head of Networks | AI-ready radio portfolio launch |
+| Börje Ekholm | President & CEO | 2025 Annual Report & AI-native profitability |
+| Per Narvinger | Head of Networks | AI-ready radio portfolio & Intel 6G alliance |
 | Yossi Cohen | Head of Americas | US Open RAN expansion (AT&T) |
-| Erik Ekudden | CTO | 6G prototyping & Silicon accelerators |
-| Jenny Lindqvist | Head of Cloud/Services | Cloud RAN & SMO evolution |
+| Erik Ekudden | CTO | Level 4 Network Autonomy & 6G silicon |
+| Jenny Lindqvist | Head of Cloud/Services | FET 5G-Advanced agreement & SMO |
 | Stella Medlicott | SVP Chief Marketing & Comms | Departing March 31, 2026 |
 
 ## Archive

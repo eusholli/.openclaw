@@ -13,14 +13,21 @@ Things like:
 - Device nicknames
 - Anything environment-specific
 
+## Web Tools
+
+### web_search
+- **Provider:** Brave Search API (`BRAVE_API_KEY`)
+- **Expected latency:** ~1–3s
+- **Best for:** All B2B research queries — fast, structured results
+
+### web_fetch
+- **Provider:** Built-in HTTP + Firecrawl fallback (`FIRECRAWL_API_KEY`)
+- **Expected latency:** ~2–5s
+- **Best for:** Extracting content from a specific URL. Firecrawl auto-activates for JS-heavy pages.
+
 ## Examples
 
 ```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
 ### SSH
 
 - home-server → 192.168.1.100, user: admin
