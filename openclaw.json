@@ -125,14 +125,17 @@
       "verboseDefault": "on",
       "thinkingDefault": "low",
       "model": {
-        "primary": "google/gemini-3-flash-preview",
+        "primary": "google/gemini-3.1-flash-lite-preview",
         "fallbacks": [
-          "google/gemini-2.5-flash-lite-preview-09-2025",
+          "google/gemini-3-flash-preview",
           "moonshot/kimi-k2.5",
           "minimax/MiniMax-M2.5"
         ]
       },
       "models": {
+        "google/gemini-3.1-flash-lite-preview": {
+          "alias": "kenji-3.1"
+        },
         "google/gemini-3-flash-preview": {
           "alias": "kenji"
         },
