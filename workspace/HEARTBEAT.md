@@ -1,8 +1,12 @@
 # HEARTBEAT.md - Kenji Active Tasks
 
 ## 2–3× per day (rotate):
-- Check for latest news on targets with meetings scheduled this week (check memory/Meeting_*.md)
 - Scan for announcements from: Nokia, Ericsson, Rakuten Symphony, AT&T, Verizon
+  → For each: web_search for latest news, then READ the existing memory file, prepend new bullet(s) to ## Latest, write back the FULL merged file. Never overwrite with only the new snippet.
+  → When scanning competitors (Nokia, Ericsson, AT&T, Verizon): identify any instance of
+    hardware-cycle dependency, proprietary lock-in, integration complexity, or legacy
+    architecture constraint. Tag these bullets with [FRICTION] prefix in ## Latest.
+    Example: `[FRICTION] Nokia AI-RAN tied to hardware refresh cycle per Mar 2026 announcement.`
 
 ## Daily (end of day):
 - If today's daily session file > 50 lines: compress to 5-bullet summary and add "## Archive" section

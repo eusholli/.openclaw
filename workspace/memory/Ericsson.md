@@ -1,23 +1,27 @@
 # Ericsson
 
 ## Latest
-- **Mar 6, 2026**: **6G OTA Breakthrough:** Completed the world's first **pre-standard 6G over-the-air (OTA) session** in the US (AI-native/cloud architecture).
+- **Mar 11, 2026**: Ericsson Inc. (US subsidiary) disclosed that attackers stole data from over 15,000 employees and customers after a vishing attack on a third-party service provider. (Source: BleepingComputer, 2026-03-11)
+- **Mar 11, 2026**: [FRICTION] Data breach resulting from third-party vishing attack highlights significant integration complexity and security vulnerabilities in the vendor's service delivery supply chain.
+- **Mar 10, 2026**: Ericsson and Turkcell signed an MoU at MWC 2026 to collaborate on 6G R&D, focusing on Agentic AI and Autonomous Networks (Ericsson Newsroom, 2026-03-10).
+- **Mar 10, 2026**: Ericsson Inc. (US branch) disclosed a data breach resulting from a third-party service provider attack (SecurityAffairs, 2026-03-10).
+- **Mar 10, 2026**: Announced Stella Medlicott, SVP Chief Marketing & Communications Officer, will leave Ericsson on March 31, 2026.
+- **Mar 10, 2026**: No new major strategy announcements; focus on 6G research and 5G network modernization across global markets.
+- **Mar 10, 2026**: Completed the world's first 6G pre-standard over-the-air session at MWC 2026, marking a benchmark in 6G readiness. (Source: ZDNET, 2026-03-06)
 - **Mar 6, 2026**: **Dialog Axiata (Sri Lanka):** Signed agreement to deploy 5G RAN and **Cloud Native Infrastructure Solution (CNIS)** nationwide.
 - **Mar 6, 2026**: **Türkiye 6G MoU:** Strategic research collaboration with **Türk Telekom** and **Turkcell** (5G Advanced) to shape emerging standards.
 - **Mar 5, 2026**: **Ethio Telecom Expansion:** Signed a landmark deal for modernization of 1,500 mobile sites.
-- **Mar 4, 2026**: Published 2025 Annual Report; reported SEK 28.7B net income (up from SEK 0.4B in 2024) despite a 5% sales decline, driven by iconectiv divestment and cost cuts.
+- **Mar 4, 2026**: Published 2025 Annual Report; reported SEK 28.7B net income (up from SEK 0.4B in 2024) despite a 5% sales decline.
 - **Mar 4, 2026**: Announced **Level 4 Network Autonomy** achievement, enabling networks to make operational decisions with minimal human intervention.
-- **Mar 2, 2026**: Announced that **Ericsson Cloud RAN** software is now portable to Nvidia AI infrastructure via Nvidia Aerial CUDA; live demos with T-Mobile at MWC.
-- **Mar 2, 2026**: Strategic partnership with **Intel** to accelerate AI-native 6G; 6G testbeds targeted for late 2027 with commercial availability by 2030.
-- **Mar 2, 2026**: Signed 3-year agreement with **Far EasTone (FET)** to accelerate 5G-Advanced and move toward AI-native 6G development.
-- **Mar 2, 2026**: Founding member of **OCUDU (Open CU/DU)** ecosystem; demoing 6G prototypes with Apple and MediaTek at MWC.
-- **Mar 1, 2026**: Founding member of **NVIDIA's AI-Native 6G Alliance** to build open 6G platforms.
-- **Mar 2026**: Announced reduction of ~1,600 positions in Sweden for 2026 as part of ongoing efficiency efforts.
+- **Mar 2, 2026**: **Ericsson Cloud RAN** now portable to Nvidia AI infrastructure via Nvidia Aerial CUDA; live demos with T-Mobile at MWC.
+- **Mar 2, 2026**: Strategic partnership with **Intel** to accelerate AI-native 6G; testbeds targeted for late 2027, commercial by 2030.
+- **Mar 2, 2026**: Signed 3-year agreement with **Far EasTone (FET)** for 5G-Advanced and AI-native 6G development.
+- **Mar 1, 2026**: Founding member of **NVIDIA's AI-Native 6G Alliance** and **OCUDU (Open CU/DU)** ecosystem.
 
 ## Profile
 - **Role**: Global telecom leader focusing on "AI for networks and networks for AI."
 - **Key Strategy**: AI-Native RAN using **Ericsson Silicon** and high-level network autonomy (Level 4 achieved 2025).
-- **Strategic Focus**: 5G-Advanced modernization, 6G path-finding with Intel/NVIDIA, and programmable network platforms (Telstra, Vodafone).
+- **Strategic Focus**: 5G-Advanced modernization, 6G path-finding with Intel/NVIDIA, and programmable network platforms.
 
 ## Key Decision Makers
 | Name | Role | Most Recent Public Topic |
@@ -32,4 +36,5 @@
 ## Archive
 - **Mar 2-4, 2026**: Multiple 6G demos (Apple, MediaTek) and MRSS spectrum sharing.
 - **Feb 2026**: World's first live 6G pre-standard OTA trial in Texas.
-- **Sources**: ericsson.com, Press releases (Feb–Mar 2026), Light Reading.
+- **Mar 2026**: Announced reduction of ~1,600 positions in Sweden as part of efficiency efforts.
+- **Sources**: ericsson.com, Press releases (Feb–Mar 2026), Light Reading, TelecomLead.

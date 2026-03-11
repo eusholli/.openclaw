@@ -156,6 +156,7 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
    → ONE `web_search` with a comprehensive query: `"<Target> company telecom B2B strategy announcements executives 2026"`.
    → If missing a specific angle (e.g. latest news, exec profile), add a SECOND targeted `web_search`. Maximum 2 calls total.
    → Synthesize → Save to `memory/{Target}.md`. STOP.
+   → **Complex multi-target event intelligence** (ROI tables, pipeline modeling, attendee ranking, full narrative synthesis across multiple targets): use model `kenji-pro`.
 
 3. **Quick news / recent activity?**
    → ONE `web_search` with `freshness: "pw"` (past week). STOP.
@@ -283,32 +284,45 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 For each research target (person, company, event):
 
 1. **Create/Update File:** `memory/{Target_Name}.md` (e.g., `memory/Rakuten_Symphony.md`, `memory/Geoff_Hollingworth.md`).
-2. **Structure:**
-   - **Profile:** Role, Bio, Background.
-   - **Recent Activity:** Latest news, statements, blogs.
-   - **Key Connections:** Partners, events, overlaps.
-   - **Sources:** Citations from Tavily/xAI/Crawl4AI.
-3. **Update Daily:** Add new findings from each session.
+2. **Canonical structure (use this exact section order and names):**
+   ```
+   ## Latest        ← 3–5 most recent updates, newest first. Keep ≤20 lines.
+   ## Profile       ← Role, bio, background. Static — only change when facts change.
+   ## Key Decision Makers  ← (companies only) exec table
+   ## Archive       ← Older entries moved here when ## Latest exceeds 20 lines.
+   ```
+3. **Update Daily:** Prepend new findings to `## Latest`. If `## Latest` grows past 20 lines, move the oldest entries to `## Archive`.
 4. **Consolidate:** Monthly review to `MEMORY.md` if high value.
 
 **Example Entry (`memory/Rakuten_Symphony.md`):**
 ```markdown
 # Rakuten Symphony
 
+## Latest
+- **Mar 10, 2026**: Launched first OSS for non-terrestrial networks (Fierce Network).
+- **Mar 2026**: MWC 2026 — "Intelligent Growth" theme; AST SpaceMobile D2D partnership announced.
+
 ## Profile
-- **Role:** Cloud-native Open RAN telecom platforms.
+- **Role:** Cloud-native Open RAN telecom platform (Symworld). Subsidiary of Rakuten Group.
 - **Key Execs:** Geoff Hollingworth (CMO), Vaibhav Dongre (VP Mktg), Jason King (VP Mktg).
 
-## Recent Activity
-- 2026: Intelligent Growth theme, MWC panels.
-- Jan 2026: "Control Illusion" blog (Geoff).
-
-## Sources
-- Tavily (exec profiles)
-- xAI (latest news)
+## Archive
+- **Jan 2026**: "Control Illusion" blog by Geoff Hollingworth.
 ```
 
 **Action:** After every research task, write findings to `memory/` and update relevant files.
+
+**⚠️ Memory File Update Rules — Read This Before Touching Any memory/ File:**
+
+1. **ALWAYS `read_file` first.** Read the target file immediately before any write or edit. Never write from cached or generated content.
+
+2. **NEVER overwrite an existing file with only new content.** When updating an existing file, read the full current content, merge new findings into `## Latest` (prepend newest at top), and write back the complete merged file. Writing only the new snippet will permanently destroy the Profile and Archive sections.
+
+3. **For new files:** Use `write_file` with the full canonical structure (Latest + Profile + Archive).
+
+4. **For existing files:** Use `write_file` with the complete merged content (existing + new), OR use `edit_file` with an `old_string` taken verbatim from the fresh `read_file` result. If `edit_file` fails ("text not found"), immediately fall back to the `read_file` → merge → `write_file` pattern.
+
+5. **News scan updates (heartbeat/cron):** Add 1–3 new bullets to the TOP of `## Latest`. Do not alter `## Profile` or `## Archive` unless new factual information warrants it.
 
 ## Make It Yours
 

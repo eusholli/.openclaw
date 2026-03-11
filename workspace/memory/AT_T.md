@@ -1,13 +1,15 @@
 # AT&T
 
 ## Latest
-- **Mar 6, 2026**: **Satellite Broadband:** Partnering with **AST SpaceMobile** for H1 2026 satellite broadband launch.
-- **Mar 6, 2026**: **Labor Update:** **CWA Orange Mobility** members are mobilizing as the contract expiration (March 6) is reached.
-- **Mar 6, 2026**: **Leadership Expansion:** **Tang Pham**'s role expanded to oversee national security programs within the federal business unit.
-- **Mar 5, 2026**: **"America's Best Guarantee":** Expanded guarantee to millions of households, now encompassing **AT&T Internet Air** and offering free **Internet Backup** for Fiber + Postpaid Wireless customers.
-- **Mar 2, 2026**: Collaborating with **Rakuten Symphony** at MWC to enhance operator network design and build solutions.
-- **Mar 2, 2026**: Founding member of **OCUDU (Open CU/DU)** under Linux Foundation Networking to advance open-source RAN for 5G, 6G, and AI-RAN.
-- **Mar 1, 2026**: Founding member of **NVIDIA's AI-Native 6G Alliance** to build open 6G platforms.
+- **Mar 11, 2026**: [FRICTION] The $250 billion, 5-year investment plan highlights a sustained hardware-cycle dependency and massive capital intensity required to modernize legacy U.S. infrastructure for AI-native connectivity.
+- **Mar 10, 2026**: Announced a $250 billion, 5-year investment commitment for U.S. infrastructure and connectivity expansion, marking the 150th anniversary of the first telephone call. (Source: AT&T Newsroom, 2026-03-10)
+- **Mar 6, 2026**: Satellite broadband partnership with AST SpaceMobile for H1 launch.
+- **Mar 6, 2026**: CWA Orange Mobility contract expiration.
+- **Mar 6, 2026**: Tang Pham expansion to national security programs.
+- **Mar 5, 2026**: "America's Best Guarantee" expansion (Internet Air/Fiber Backup).
+- **Mar 2, 2026**: Rakuten Symphony collaboration (MWC).
+- **Mar 2, 2026**: Founding member of OCUDU (Open CU/DU foundation).
+- **Mar 1, 2026**: NVIDIA AI-Native 6G Alliance member.
 
 ## Profile
 - **Role**: Leading US telecommunications provider, aggressively transitioning to Open RAN and fiber-centric growth.
@@ -17,7 +19,7 @@
 ## Key Decision Makers
 | Name | Role | Most Recent Public Topic |
 |------|------|--------------------------|
-| John Stankey | Chairman & CEO | Leading the Future: Intelligent & Unstoppable |
+| John Stankey | Chairman & CEO | $250B US Investment Commitment (Mar 2026) |
 | Pascal Desroches | CFO | Multi-year outlook & capital returns |
 | Jeff McElfresh | COO | Operational efficiency & fiber growth |
 | Jeremy Legg | CTO | AI-ready data ecosystems & 6G |
@@ -26,4 +28,4 @@
 
 ## Archive
 - **Feb 2026**: Fiber expansion milestones and Open RAN transition progress.
-- **Sources**: AT&T Newsroom, Light Reading, MWC 2026 reports.
+- **Sources**: AT&T Newsroom, Light Reading, MWC 2026.

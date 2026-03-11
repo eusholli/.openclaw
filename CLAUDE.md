@@ -11,14 +11,16 @@ This is a **configuration and data repository** for an OpenClaw AI agent system 
 ```
 .openclaw/
 ├── agents/                   # Per-agent session history (gitignored)
-│   ├── main/sessions/        # Main agent conversation sessions
-│   └── tavily/sessions/      # Tavily-enhanced agent sessions
+│   ├── main/agent/           # Main agent runtime config (models.json, auth-profiles.json)
+│   ├── main/sessions/        # Main agent conversation sessions (gitignored)
+│   └── tavily/sessions/      # Tavily-enhanced agent sessions (gitignored)
 ├── workspace/                # Main agent's working directory
 │   ├── AGENTS.md             # Core behavioral rules for the agent
 │   ├── SOUL.md               # Agent personality and guiding principles
 │   ├── USER.md               # Info about the human (eusholli / Rakuten Symphony)
 │   ├── TOOLS.md              # Local environment-specific notes
 │   ├── HEARTBEAT.md          # Periodic proactive task list
+│   ├── MEMORY.md             # Long-term curated agent memory (main session only)
 │   └── memory/               # Agent memory files
 │       ├── YYYY-MM-DD.md     # Daily session notes
 │       └── *.md              # Topic-specific long-term memory
@@ -26,17 +28,29 @@ This is a **configuration and data repository** for an OpenClaw AI agent system 
 │   ├── AGENTS.md, SOUL.md, USER.md, TOOLS.md, HEARTBEAT.md
 │   ├── IDENTITY.md           # Agent's chosen name/persona
 │   └── BOOTSTRAP.md          # First-run initialization script (delete after use)
+├── workspace-long-context/   # Long-context variant workspace (same structure)
+├── openclaw.json             # Main runtime config (model routing, tools, gateway, hooks)
+├── mcporter.json             # MCP server configuration
 ├── identity/                 # Device keypair and ID (gitignored — never commit)
 ├── canvas/                   # Web UI assets (gitignored)
 └── logs/                     # Command logs (gitignored)
 ```
 
-## Two Agent Configurations
+## Three Agent Configurations
 
-- **`workspace/`** — Main agent. Loaded for direct human conversations. Reads `MEMORY.md` (long-term curated memory) only in main sessions for privacy.
+- **`workspace/`** — Main agent ("Symphony Signal" / persona "Kenji"). Direct human conversations. Reads `MEMORY.md` only in main sessions for privacy.
 - **`workspace-tavily/`** — Tavily-enhanced agent with web search capability. Has its own `IDENTITY.md` and `BOOTSTRAP.md`.
+- **`workspace-long-context/`** — Long-context variant with same structure as the others.
 
-Both share the same structure but operate independently with separate session histories.
+All workspaces share the same file structure but operate independently with separate session histories.
+
+## Applying Configuration Changes
+
+There is no build step. After editing any `.md` or `.json` file, restart the container to apply:
+
+```bash
+cd ~/dev/sales-recon && docker compose restart sales-recon-openclaw
+```
 
 ## Memory System
 
@@ -51,12 +65,18 @@ When adding memory files, follow these conventions:
 - Person profiles: `memory/FirstName_LastName.md`
 - Event summaries: `memory/EventName_YYYY_Summary.md`
 
+## Key Configuration Files
+
+- **`openclaw.json`** — Top-level runtime config: model providers/routing, tool enablement, gateway settings, hooks. The `agents.defaults.model` section sets the primary model and fallback chain.
+- **`agents/main/agent/models.json`** — Per-agent model registry generated at runtime. **Must stay aligned with `openclaw.json`** when changing model IDs — mismatches cause routing failures.
+
 ## Key Behavioral Files
 
 When modifying agent behavior, these are the authoritative files:
-- **`workspace/AGENTS.md`** — Session startup sequence, memory rules, safety boundaries, group chat guidelines, heartbeat configuration
+- **`workspace/AGENTS.md`** — Session startup sequence, memory rules, safety boundaries, group chat guidelines, heartbeat configuration, research decision tree
 - **`workspace/SOUL.md`** — Core personality traits and guiding principles (edit with care; tell the user if you change it)
 - **`workspace/HEARTBEAT.md`** — Active periodic tasks (keep small to limit token cost)
+- **`workspace/MEMORY.md`** — Agent's long-term curated memory (hard cap: 200 lines; only loaded in main sessions)
 
 ## Security / Gitignore
 

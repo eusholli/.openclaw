@@ -1,6 +1,10 @@
 # Rakuten Symphony
 
 ## Latest
+- **Mar 11, 2026**: [FRICTION] Integration of non-terrestrial network (NTN) OSS with legacy ground-based network orchestration presents significant synchronization and latency management challenges for hybrid terrestrial-satellite services.
+- **Mar 11, 2026**: Featured at **Fierce Network** for the development of the industry's first OSS for non-terrestrial networks, enabling automated management of satellite-to-device coverage.
+- **Mar 10, 2026**: No new strategic product announcements following MWC session.
+- **Mar 10, 2026**: Developed the industry's first OSS for non-terrestrial networks, managing satellite-based ground coverage in collaboration with Rakuten Mobile and AST SpaceMobile. (Source: Fierce Network, 2026-03-08)
 - **Mar 6, 2026**: **Satellite Connectivity:** Showcased OSS for satellite-based connectivity (AST SpaceMobile collaboration).
 - **Mar 6, 2026**: **Samsung vRAN Interop:** Completed interoperability testing of **Samsung's cloud-native vRAN and vCore** on the Rakuten Cloud-Native Platform.
 - **Mar 5, 2026**: **Google Cloud Integration:** Announced **Rakuten Cloud-Native Storage** is now built into **Google Distributed Cloud** Connected Servers.
@@ -25,4 +29,4 @@
 
 ## Archive
 - **Feb 2026**: Published blog on AI-Driven Location Intelligence.
-- **Sources**: symphony.rakuten.com, Rakuten Group IR.
+- **Sources**: symphony.rakuten.com, Rakuten Group, Fierce Network.
