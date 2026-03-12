@@ -327,3 +327,51 @@ For each research target (person, company, event):
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## AI Event Planner Integration
+
+When a message contains an `[ActionCtx]` block, you have access to the AI Event Planner webapp database via the `webapp_action` HTTP tool.
+
+### Session Start
+At the start of each message, parse the `[ActionCtx]` block:
+```
+[ActionCtx appUrl="..." token="..." eventId="..." eventSlug="..." role="..."]
+```
+Store these values. Use `eventId` (not `eventSlug`) when calling `webapp_action`.
+
+### Missing Event Context
+
+If `eventId` is empty in `[ActionCtx]` and the user's request requires database access (writing ROI targets, creating meetings, looking up attendees, etc.):
+
+1. **Ask which event** they want to work with: "Which event should I sync this to? (e.g. the event name or slug)"
+2. **Search the database** using `listEvents` with `{ search: "<name they gave>" }` — this tool works without an eventId. It returns `id`, `name`, `slug`, `status` for matching events.
+3. If still not found, tell the user: "I couldn't find that event in the database. Can you confirm the exact name or navigate to the event in the app first?"
+4. Once the `eventId` is confirmed, proceed with the operation using that ID for all subsequent `webapp_action` calls in this conversation.
+
+This applies to all operations that need an event: updateROITargets, createMeeting, cancelMeeting, addAttendee, getMeetings, getAttendees, getROITargets, getNavigationLinks.
+
+### Using webapp_action
+
+Make HTTP calls to `{appUrl}/api/intelligence/actions`:
+```
+POST {appUrl}/api/intelligence/actions
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{ "tool": "<tool_name>", "eventId": "<eventId>", "args": { ... } }
+```
+
+### Behavior Rules
+
+1. **Before any write operation** (createMeeting, cancelMeeting, addAttendee, updateROITargets): confirm intent with the user before executing. Example: "I'll create a meeting called 'X' on March 15 at 2pm. Shall I proceed?"
+
+2. **After any DB change or data fetch**: call `getNavigationLinks` to get the relevant URL, then include it as a markdown link in your response. Examples:
+   - After creating a meeting: `[View meeting →](/events/{eventSlug}/dashboard?meetingId={id})`
+   - After updating ROI: `[View ROI Targets →](/events/{eventSlug}/roi)`
+   - After adding an attendee: `[View attendees →](/events/{eventSlug}/attendees?attendeeId={id})`
+
+3. **Never expose the raw token** in your responses.
+
+4. **If 403 Forbidden**: report that the user does not have permission for that operation.
+
+5. **If 404 Event not found**: ask the user to confirm the event they're working with, then retry with the corrected ID.

@@ -1,6 +1,7 @@
 # Rakuten Symphony
 
 ## Latest
+- **Mar 12, 2026**: SVP Vivek Chadha emphasized the company's commitment to "openness" in AI and automation development, positioning it as a key differentiator against proprietary vendor stacks (The Mobile Network).
 - **Mar 11, 2026**: [FRICTION] Integration of non-terrestrial network (NTN) OSS with legacy ground-based network orchestration presents significant synchronization and latency management challenges for hybrid terrestrial-satellite services.
 - **Mar 11, 2026**: Featured at **Fierce Network** for the development of the industry's first OSS for non-terrestrial networks, enabling automated management of satellite-to-device coverage.
 - **Mar 10, 2026**: No new strategic product announcements following MWC session.
@@ -9,6 +10,7 @@
 - **Mar 6, 2026**: **Samsung vRAN Interop:** Completed interoperability testing of **Samsung's cloud-native vRAN and vCore** on the Rakuten Cloud-Native Platform.
 - **Mar 5, 2026**: **Google Cloud Integration:** Announced **Rakuten Cloud-Native Storage** is now built into **Google Distributed Cloud** Connected Servers.
 - **Mar 4, 2026**: **Strategic MoUs:** Partnered with **VEON's Beeline Uzbekistan** (Open RAN & AI), **Wind River** (Unified Cloud/Storage), and **Lightstorm** (Sovereign NaaS).
+- **Mar 12, 2026**: Finalized event marketing plan for BEAD Implementation Summit in D.C. targeting $35M in pipeline (25% win rate) from US broadband expansion. Added ROI targets to [[BEAD_Summit_2026]].
 - **Mar 2, 2026**: Announced new collaboration with **AT&T** at MWC to enhance operator network design and build solutions.
 - **Mar 2, 2026**: Kicking off **MWC Barcelona 2026** (Booth #2C70) with "Intelligent Growth" theme; featured sessions on AI-RAN and Distributed MIMO with NVIDIA.
 - **Feb 2026**: Achieved first full-year operating profit as standalone unit (FY2025 results).
@@ -26,6 +28,7 @@
 | Geoff Hollingworth | CMO | "Intelligent Growth: Networks as Software" |
 | Partha Seetala | President, Cloud Business Unit | Google Distributed Cloud Integration (MWC 2026) |
 | Subha Srinivasan | SVP, Global Service Delivery | Digital Twins & autonomous networks |
+| Vivek Chadha | SVP, Global Head of Telco Cloud | Openness in AI & automation (Mar 2026) |
 
 ## Archive
 - **Feb 2026**: Published blog on AI-Driven Location Intelligence.

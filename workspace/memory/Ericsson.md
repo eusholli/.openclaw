@@ -1,6 +1,12 @@
 # Ericsson
 
 ## Latest
+- **Mar 12, 2026**: Demonstrated agentic AI for RAN optimization and traffic routing at MWC 2026, showcasing shift toward autonomous network control (Fierce Network).
+- **Mar 12, 2026**: [FRICTION] The March 11 data breach affecting 15,000 employees/customers via a third-party service provider highlights significant risks in Ericsson's service delivery supply chain and third-party security integration.
+- **Mar 12, 2026**: [FRICTION] Cybersecurity industry warnings regarding the **Salesforce Aura Campaign** (ShinyHunters) highlight a widespread vulnerability in third-party managed CRM environments, directly impacting the security posture of large-scale service delivery models.
+- **Mar 11, 2026**: **Vonage** (Ericsson subsidiary) won "Best of Enterprise Connect 2026" for its Agentforce Identity Insights and Fraud Detection solution.
+- **Mar 11, 2026**: Expanded partnership with systems integrator **Future Technologies Venture** to accelerate private 5G adoption in North American industries.
+- **Mar 11, 2026**: Joe Constantine (CSTO, Ericsson Americas) published MWC26 takeaways, highlighting the shift toward "AI-native" networks and the importance of programmable network platforms.
 - **Mar 11, 2026**: Ericsson Inc. (US subsidiary) disclosed that attackers stole data from over 15,000 employees and customers after a vishing attack on a third-party service provider. (Source: BleepingComputer, 2026-03-11)
 - **Mar 11, 2026**: [FRICTION] Data breach resulting from third-party vishing attack highlights significant integration complexity and security vulnerabilities in the vendor's service delivery supply chain.
 - **Mar 10, 2026**: Ericsson and Turkcell signed an MoU at MWC 2026 to collaborate on 6G R&D, focusing on Agentic AI and Autonomous Networks (Ericsson Newsroom, 2026-03-10).
@@ -32,6 +38,8 @@
 | Erik Ekudden | CTO | Level 4 Network Autonomy & 6G silicon |
 | Jenny Lindqvist | Head of Cloud/Services | FET 5G-Advanced agreement & SMO |
 | Stella Medlicott | SVP Chief Marketing & Comms | Departing March 31, 2026 |
+| Joe Constantine | Chief Strategy & Tech Officer, Americas | MWC26 Takeaways & AI-native networks (Mar 2026) |
+| Asa Tamsons | SVP & Head of Enterprise Wireless | Future Technologies Partnership (Mar 2026) |
 
 ## Archive
 - **Mar 2-4, 2026**: Multiple 6G demos (Apple, MediaTek) and MRSS spectrum sharing.

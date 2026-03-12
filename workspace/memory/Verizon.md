@@ -1,6 +1,9 @@
 # Verizon
 
 ## Latest
+- **Mar 12, 2026**: CFO Tony Skiadas stated that the $16–$16.5 billion CapEx for 2026 is sufficient for growth as network excellence work is "substantially complete" (ZoomInfo).
+- **Mar 12, 2026**: [FRICTION] Declaring network excellence "substantially complete" while CapEx stays high at $16B+ suggests a shift from expansion to maintenance/optimization, potentially limiting rapid pivoting to new AI architectures compared to more aggressive spenders like AT&T.
+- **Mar 12, 2026**: [FRICTION] Reports of the **Salesforce Aura Campaign** (ShinyHunters) targeting major companies create a risk profile for Verizon's customer relationship and service delivery platforms during its "AI-first" pivot.
 - **Mar 11, 2026**: [FRICTION] The plan to cut 13k-15k jobs under the new CEO transition reflects significant organizational disruption and potential loss of specialized expertise during the pivot to an AI-first business model.
 - **Mar 10, 2026**: Tony Skiadas, CFO, spoke at the Deutsche Bank Media, Internet & Telecom Conference regarding Verizon's 2026 financial roadmap and infrastructure efficiency.
 - **Mar 10, 2026**: No new strategic B2B announcements; focus continues on 2026 postpaid growth and AI-native service simplification.

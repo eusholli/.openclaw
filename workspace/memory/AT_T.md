@@ -1,7 +1,9 @@
 # AT&T
 
 ## Latest
-- **Mar 11, 2026**: [FRICTION] The $250 billion, 5-year investment plan highlights a sustained hardware-cycle dependency and massive capital intensity required to modernize legacy U.S. infrastructure for AI-native connectivity.
+- **Mar 12, 2026**: Moving towards requiring debit cards/bank accounts for autopay discounts, aligning with industry-wide shifts to reduce payment processing costs (Lohud).
+- **Mar 12, 2026**: [FRICTION] The new $250 billion investment plan underscores the immense capital burden and execution complexity of retrofitting national infrastructure for the "AI age" while managing legacy transition.
+- **Mar 11, 2026**: [FRICTION] The $250 billion investment plan highlights a sustained hardware-cycle dependency and massive capital intensity required to modernize legacy U.S. infrastructure for AI-native connectivity.
 - **Mar 10, 2026**: Announced a $250 billion, 5-year investment commitment for U.S. infrastructure and connectivity expansion, marking the 150th anniversary of the first telephone call. (Source: AT&T Newsroom, 2026-03-10)
 - **Mar 6, 2026**: Satellite broadband partnership with AST SpaceMobile for H1 launch.
 - **Mar 6, 2026**: CWA Orange Mobility contract expiration.

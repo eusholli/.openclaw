@@ -1,6 +1,8 @@
 # Nokia
 
 ## Latest
+- **Mar 12, 2026**: Demonstrated agentic AI at MWC 2026 for managing RAN optimization, traffic routing, and fault management (Fierce Network).
+- **Mar 12, 2026**: [FRICTION] Use of agentic AI for network control introduces significant integration complexity for legacy architectures and may require proprietary Nokia AI stacks for full automation.
 - **Mar 11, 2026**: Partnered with **Nvidia** in a **$1 billion** investment to accelerate AI-native 5G-Advanced and 6G network development; shifting focus away from custom silicon toward Nvidia hardware to focus on AI-RAN innovation. (Source: Android Headlines, 2026-03-11)
 - **Mar 11, 2026**: [FRICTION] Strategic shift to Nvidia hardware for AI-RAN creates a hardware-cycle dependency and potential proprietary lock-in with Nvidia's AI ecosystem for future 6G architectures.
 - **Mar 10, 2026**: Nokia filed a transaction notification for manager Raghav Sahgal (GlobeNewswire, 2026-03-10).
