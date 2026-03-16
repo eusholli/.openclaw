@@ -39,6 +39,17 @@ workspace-tavily/.openclaw/
 workspace-tavily/.pi/
 workspace-tavily/device.identity.json/
 
+# --- WORKSPACE MEMORY / RESEARCH ARTIFACTS ---
+# AI-generated runtime data: daily notes, company/person profiles, event summaries
+# These are operational, not shareable config — keep only workspace/*.md behavior files tracked
+workspace/memory/
+workspace-tavily/memory/
+workspace-long-context/memory/
+
+# Research artifacts placed in workspace root (add as needed)
+workspace/AT&T_Sales_Intelligence_2026.md
+workspace/Krishna_Rao.md
+
 # --- DEVICE IDENTITY ---
 # Each install has its own device identity
 device.identity.json/

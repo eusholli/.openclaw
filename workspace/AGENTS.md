@@ -330,48 +330,69 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ## AI Event Planner Integration
 
-When a message contains an `[ActionCtx]` block, you have access to the AI Event Planner webapp database via the `webapp_action` HTTP tool.
+When a message contains an `[ActionCtx]` block, you have access to the AI Event Planner webapp.
 
 ### Session Start
 At the start of each message, parse the `[ActionCtx]` block:
 ```
 [ActionCtx appUrl="..." token="..." eventId="..." eventSlug="..." role="..."]
 ```
-Store these values. Use `eventId` (not `eventSlug`) when calling `webapp_action`.
+Store these values. Use `eventSlug` for `eventId` in [PENDING_ACTION] blocks.
 
 ### Missing Event Context
 
-If `eventId` is empty in `[ActionCtx]` and the user's request requires database access (writing ROI targets, creating meetings, looking up attendees, etc.):
+If `eventId` is empty in `[ActionCtx]` and the user's request requires event access:
 
-1. **Ask which event** they want to work with: "Which event should I sync this to? (e.g. the event name or slug)"
-2. **Search the database** using `listEvents` with `{ search: "<name they gave>" }` — this tool works without an eventId. It returns `id`, `name`, `slug`, `status` for matching events.
-3. If still not found, tell the user: "I couldn't find that event in the database. Can you confirm the exact name or navigate to the event in the app first?"
-4. Once the `eventId` is confirmed, proceed with the operation using that ID for all subsequent `webapp_action` calls in this conversation.
+1. **Ask which event** they want to work with
+2. **Search the database** — describe that you would run a listEvents search, but ask the user to confirm the event name/slug
+3. Once confirmed, use that slug for all subsequent [PENDING_ACTION] blocks
 
-This applies to all operations that need an event: updateROITargets, createMeeting, cancelMeeting, addAttendee, getMeetings, getAttendees, getROITargets, getNavigationLinks.
+### Read Operations
 
-### Using webapp_action
+For read operations (getMeetings, getAttendees, getRooms, getROITargets, getEvent, listEvents), you do NOT have a tool to call the API directly. Instead:
+- Describe to the user what you would look up
+- Ask them to confirm what they see in the app
+- Or direct them to the relevant page using a navigation link
 
-Make HTTP calls to `{appUrl}/api/intelligence/actions`:
+### Write Operations — [PENDING_ACTION] Pattern
+
+**NEVER use `exec`, `curl`, `python`, `python3`, `web_fetch`, or any HTTP tool to call the event-planner API.**
+
+For any write operation, output exactly one `[PENDING_ACTION]` block in this format:
 ```
-POST {appUrl}/api/intelligence/actions
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{ "tool": "<tool_name>", "eventId": "<eventId>", "args": { ... } }
+[PENDING_ACTION id="<uuid>" tool="<toolName>" eventId="<slug>" args='<JSON>']
 ```
+
+Then stop and tell the user: "I've proposed this action and am waiting for your confirmation in the chat."
+
+Generate a unique UUID for each `[PENDING_ACTION]` id (format: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx).
+
+**Available write tools:**
+
+| tool | args |
+|------|------|
+| `createMeeting` | `{ "title": "", "date": "YYYY-MM-DD", "startTime": "HH:mm", "endTime": "HH:mm", "purpose"?: "", "roomId"?: "", "attendeeEmails"?: [] }` |
+| `cancelMeeting` | `{ "meetingId": "" }` |
+| `updateMeeting` | `{ "meetingId": "", "title"?: "", "date"?: "YYYY-MM-DD", "startTime"?: "HH:mm", "endTime"?: "HH:mm", "roomId"?: "", "attendeeEmails"?: [] }` |
+| `addAttendee` | `{ "name": "", "email": "", "title": "", "company": "" }` |
+| `updateCompany` | `{ "companyId": "", "pipelineValue"?: 0, "notes"?: "" }` |
+| `updateROITargets` | `{ "expectedPipeline"?: 0, "winRate"?: 0, "expectedRevenue"?: 0, "targetCustomerMeetings"?: 0, "budget"?: 0, "targetCompanyNames"?: ["Acme Corp", "New Co"] }` |
+
+### After Confirmation
+
+After the user confirms an action, ws-proxy will execute it and send back a result. When you see a result in the conversation:
+- If success: call `getNavigationLinks` description to tell user where to find the updated data
+- If error: explain what went wrong and suggest next steps
 
 ### Behavior Rules
 
-1. **Before any write operation** (createMeeting, cancelMeeting, addAttendee, updateROITargets): confirm intent with the user before executing. Example: "I'll create a meeting called 'X' on March 15 at 2pm. Shall I proceed?"
+1. **Always confirm intent** before emitting [PENDING_ACTION]. Example: "I'll create a meeting called 'X' on March 15 at 2pm — confirming this will add it to the database. Ready?"
 
-2. **After any DB change or data fetch**: call `getNavigationLinks` to get the relevant URL, then include it as a markdown link in your response. Examples:
-   - After creating a meeting: `[View meeting →](/events/{eventSlug}/dashboard?meetingId={id})`
-   - After updating ROI: `[View ROI Targets →](/events/{eventSlug}/roi)`
-   - After adding an attendee: `[View attendees →](/events/{eventSlug}/attendees?attendeeId={id})`
+2. **One action at a time.** Emit one [PENDING_ACTION] block, then stop and wait for confirmation before proposing the next action.
 
 3. **Never expose the raw token** in your responses.
 
-4. **If 403 Forbidden**: report that the user does not have permission for that operation.
-
-5. **If 404 Event not found**: ask the user to confirm the event they're working with, then retry with the corrected ID.
+4. **Include navigation links** after successful operations. Example:
+   - After creating a meeting: `[View meeting →](/events/{eventSlug}/dashboard)`
+   - After updating ROI: `[View ROI Targets →](/events/{eventSlug}/roi)`
+   - After adding an attendee: `[View attendees →](/events/{eventSlug}/attendees)`
