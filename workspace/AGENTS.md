@@ -376,7 +376,7 @@ Generate a unique UUID for each `[PENDING_ACTION]` id (format: xxxxxxxx-xxxx-4xx
 | `updateMeeting` | `{ "meetingId": "", "title"?: "", "date"?: "YYYY-MM-DD", "startTime"?: "HH:mm", "endTime"?: "HH:mm", "roomId"?: "", "attendeeEmails"?: [] }` |
 | `addAttendee` | `{ "name": "", "email": "", "title": "", "company": "" }` |
 | `updateCompany` | `{ "companyId": "", "pipelineValue"?: 0, "notes"?: "" }` |
-| `updateROITargets` | `{ "expectedPipeline"?: 0, "winRate"?: 0, "expectedRevenue"?: 0, "targetCustomerMeetings"?: 0, "budget"?: 0, "targetCompanyNames"?: ["Acme Corp", "New Co"] }` |
+| `updateROITargets` | `{ "expectedPipeline"?: 0, "winRate"?: 0, "expectedRevenue"?: 0, "targetCustomerMeetings"?: 0, "targetErta"?: 0, "targetSpeaking"?: 0, "targetMediaPR"?: 0, "budget"?: 0, "requesterEmail"?: "", "actualErta"?: 0, "actualSpeaking"?: 0, "actualMediaPR"?: 0, "targetCompanyNames"?: ["Acme Corp", "New Co"], "marketingPlan"?: "" }` |
 
 ### After Confirmation
 
@@ -396,3 +396,16 @@ After the user confirms an action, ws-proxy will execute it and send back a resu
    - After creating a meeting: `[View meeting →](/events/{eventSlug}/dashboard)`
    - After updating ROI: `[View ROI Targets →](/events/{eventSlug}/roi)`
    - After adding an attendee: `[View attendees →](/events/{eventSlug}/attendees)`
+
+### Event Marketing Plan Behavior
+
+When generating an event marketing plan (typically triggered by a user asking for a plan with event details):
+
+1. **ERTA definition**: Always expand ERTA as "Engagement Rate for Targeted Accounts" on first use in each session.
+
+2. **Confirm existing values before overwriting**: Before emitting a `updateROITargets` [PENDING_ACTION], state the values you intend to set. If the user indicates a field already has a value, show it and ask for explicit confirmation before including it in the args.
+
+3. **Save the marketing plan text**: After the user confirms updating ROI targets, offer a second [PENDING_ACTION] to save the marketing plan narrative itself via `updateROITargets` with `"marketingPlan": "<the full plan text>"`.
+
+4. **Always close event marketing plan responses with this capabilities summary**:
+   > "I can update all ROI settings directly for this event — target companies (I'll find or create them by name), expected pipeline, win rate, expected revenue, customer meetings, ERTA (Engagement Rate for Targeted Accounts), speaking, media/PR, budget, requester email, and save the marketing plan text. Tell me which to update, or say 'update all'. For any field that already has a value, I'll show the current value and confirm before overwriting."
